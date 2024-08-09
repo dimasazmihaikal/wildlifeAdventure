@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+
+@layer base {
+  html {
+    font-family: 'Carter One', cursive;  
+  }
+}
+.card-zoom {
+  @apply relative flex flex-col items-center justify-center overflow-hidden shadow-xl w-full mn:h-1/3 sm:h-full bg-scroll;
+}
+.card-zoom-image {
+  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-cover;
+}
+.card-zoom-teks {
+  @apply absolute lg:text-4xl sm:text-3xl font-black transition-all duration-500 ease-in-out transform scale-150 text-slate-800 opacity-90 bg-white bg-opacity-60 p-2 px-[1000px];
+}
+
+.card-zoom:hover .card-zoom-image {
+  @apply scale-150;
+}
+.card-zoom:hover .card-zoom-teks {
+  @apply scale-100;
+}
+
+.cardm-zoom {
+  @apply relative flex items-center justify-center overflow-hidden shadow-xl w-1/2 h-full rounded-t-2xl hover:w-full duration-500;
+}
+.cardm-zoom-image {
+  @apply absolute w-full h-full transition-all sm:duration-500 ease-in-out transform bg-center bg-cover;
+}
+
+.cardm-zoom:hover .cardm-zoom-image {
+  @apply scale-150;
+}
+
+
+.cardsm-zoom {
+  @apply relative flex items-center justify-center m-3 overflow-hidden shadow-xl w-60 h-60 rounded-2xl hover:w-full hover:h-2/3 duration-500;
+}
+.cardsm-zoom-image {
+  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+}
+.cardsm-zoom-text {
+  @apply absolute text-5xl font-black transition-all duration-500 ease-in-out transform scale-150 text-gray-50 opacity-60;
+}
+.cardsm-zoom:hover .cardm-zoom-image {
+  @apply scale-150;
+}
+.cardsm-zoom:hover .cardm-zoom-text {
+  @apply scale-100;
+}
+
+.card-zoomm {
+  @apply relative flex items-center justify-center overflow-hidden shadow-xl w-60 h-60 rounded-2xl m-6;
+}
+.card-zoomm-image {
+  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+}
+.card-zoomm-text {
+  @apply absolute text-xl font-black transition-all duration-500 ease-in-out transform scale-150 bg-slate-50 rounded-xl p-1 bg-opacity-80 text-center;
+}
+.card-zoomm:hover .card-zoomm-image {
+  @apply scale-150 ;
+}
+.card-zoomm:hover .card-zoomm-text {
+  @apply scale-100;
+}
