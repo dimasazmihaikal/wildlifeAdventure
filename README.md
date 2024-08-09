@@ -1,5 +1,6 @@
 # wildlifeAdventure
 website tugas besar animasi dan multimedia
 
-username    : ujang
-password    : ujang123
+username dan password website
+username    : "ujang"
+password    : "ujang123"
