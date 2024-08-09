@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildlifeADV</title>
+    <link rel="stylesheet" href="../css/output.css">
+</head>
+<body class="bg-white">
+    <nav class="p-5 bg-hutanb shadow flex items-center justify-between">
+        <div>
+            <a href="../index.html" class=" cursor-pointer relative text-white">
+                <div class="absolute h-14 mn:w-24 md:w-36 mn:-top-10 sm:top-[2px] "><img src="../img/WA.png" class ="inline " alt="logo"></div>
+                <div class="ml-28 lg:text-2xl sm:text-[13px] mn:text-[0px] md:px-7 sm:px-0">Wildlife ADV</div>
+            </a>
+        </div>
+        <ul class="flex items-center  text-white">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="../index.html" class="lg:text-2xl sm:text-[13px] mn:text-[10px] hover:text-[#183b29] duration-500">Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="./tentangkami.html" class="lg:text-2xl sm:text-[13px] mn:text-[10px] hover:text-[#183b29] duration-500">Tentang</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 ">
+                <a href="./pesan.html" class="lg:text-2xl sm:text-[13px] mn:text-[10px] text-[#183b29] duration-500">Komentar</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="flex flex-col bg-fixed text-center lg:text-6xl md:text-4xl sm:text-3xl sm:h-[700px] lg:h-[880px] w-auto bg-cover bg-center bg-slate-500" style="background-image: url(../img/bgp.jpg);">
+        <div class="bg-local sm:rounded-[75px] sm:w-[900px] sm:h-[550px] mn:h-full mn:w-full   bg-[#f1c28c] px-7 py-12 m-auto bg-opacity-[97%]">
+            <div>
+                <h2 class="lg:text-3xl md:text-2xl sm:text-1xl text-center font-bold text-[#133827]">Komentar</h2>
+                <hr class="w-1/3 m-auto mt-2 h-1 bg-[#133827] rounded border-0 ">
+            </div>
+            <div>
+                <form class="m-10">
+                    <div class="mb-6">
+                        <label class="block mb-2 text-sm font-medium text-[#133827]">Your name</label>
+                        <input type="text" id="username-success" class="bg-green-50 border border-[#133827] text-green-900 placeholder-green-700 text-sm rounded-lg block w-full p-2.5" placeholder="Nama" required>
+                    </div>
+                    <div class="mb-6">   
+                        <label class="block mb-2 text-sm font-medium text-[#133827]">Pesan</label>
+                        <textarea id="message" rows="4" class="bg-green-50 border border-[#133827] text-green-900 placeholder-green-700 text-sm rounded-lg block w-full p-2.5" placeholder="Tinggalkan pesan..." required></textarea>
+                    </div>
+                    <button type="submit" class="text-white bg-[#133827] hover:bg-[#082618] font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Kirim Pesan</button>
+                    <p class="italic text-red-500 text-sm">
+                        *belum bisa digunakan belum ada database hehe...
+                    </p>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <footer class="p-4 bg-hutanb sm:p-6">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="./index.html" class="flex items-center">
+                    <img src="../img/WA.png" class="mr-3 h-14" alt="FlowBite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">WADF</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold  uppercase text-white">Resources</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="./terimakasih.html" class="hover:underline">Terimakasih Kepada</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold  uppercase text-white">Follow us</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li>
+                            <a href="https://discord.gg/85RTdq3stj" class="hover:underline">Discord</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex justify-center">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="./index.html" class="hover:underline">WildlifeADV™</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
